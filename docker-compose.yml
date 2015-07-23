@@ -1,0 +1,8 @@
+dataprocessor:
+  build: ./data-processor
+  volumes:
+   - ./data-processor:/code
+  links:
+   - cassandra
+cassandra:
+  image: cassandra
